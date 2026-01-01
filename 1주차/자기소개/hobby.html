@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .wordcloud-section {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.wordcloud {
+  position: relative;
+  width: 500px;
+  height: 400px;
+}
+
+.word {
+  position: absolute;
+  font-weight: 700;
+  color: #222;
+  cursor: default;
+  transition: transform 0.3s ease, color 0.3s ease;
+}
+
+/* 크기 */
+.word.big {
+  font-size: 48px;
+}
+.word.medium {
+  font-size: 28px;
+}
+.word.small {
+  font-size: 18px;
+}
+
+
+.word:nth-child(1) { top: 40%; left: 11%; }
+.word:nth-child(2) { top: 41%; left: 55%; }
+.word:nth-child(3) { top: 52%; left: 45%; }
+.word:nth-child(4) { top: 65%; left: 35%; }
+.word:nth-child(5) { top: 50%; left: 62%; }
+.word:nth-child(6) { top: 60%; left: 63%; }
+.word:nth-child(7) { top: 33%; left: 30%; }
+.word:nth-child(8) { top: 68%; left: 47%; }
+.word:nth-child(9) { top: 50%; left: 55%; }
+.word:nth-child(10) { top: 55%; left: 23%; }
+    </style>
+</head>
+<body>
+    <header>
+        <a href="index.html" class="back-btn">
+            <i class="bi bi-arrow-left"></i>
+        
+        </a>
+        
+    </header>
+    <section class="wordcloud-section">
+        <div class="wordcloud">
+            <span class="word big">온라인게임</span>
+            <span class="word medium">달리기</span>
+            <span class="word big">노래</span>
+            <span class="word small">수다</span>
+            <span class="word medium">비빔면</span>
+            <span class="word small">유튜브</span>
+            <span class="word medium">음악감상</span>
+            <span class="word small">산책</span>
+            <span class="word small">백준</span>
+            <span class="word medium">DIY조립</span>
+        </div>
+    </section>
+</body>
+</html>
